@@ -18,8 +18,9 @@ body {
 
 .content {
   background: #e3f4ff;
-  margin-top: 8px;
-  margin-bottom: 8px;
+  margin-block: 8px;
+  padding-block: 16px;
+  padding-inline: 8px;
 }
 
 .button-container {
