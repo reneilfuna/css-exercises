@@ -21,17 +21,31 @@ body {
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
   display: flex;
+  flex: 1 1 0;
+  padding: 8px;
 }
 
 .right {
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
+  align-items:flex-start;
   margin: 4px;
   gap: 6px;
 }
 
 .top {
   display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.header {
+  font-weight: bold;
+  font-size: 1.1rem;
 }
 
 .icon {
@@ -63,6 +77,8 @@ body {
   border: 1px solid #eee;
   padding: 0;
 }
+
+
 
 button {
   cursor: pointer;
