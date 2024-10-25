@@ -47,18 +47,33 @@ body {
   padding: 16px;
 }
 
+/* To solve the card layout, I have to set a width where the minimum width allows for a 2x3 layout
+    but the cards can stretch up to a 3x2 layout */
+
+/* 
+  Having now managed to achieve a 2x3 -> 3x2 layout, I now have to solve using up all the 
+  available space.
+  The current solution achieves a 2x3 grid when there is not enough space, but leaves a gap 
+  where another card placement was attempted 
+*/
+  /Flexercise6.png
+
+
 .cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: flex-start;
+  justify-content: flex-start;
+  align-items: stretch;
   padding: 48px;
   gap: 8px; 
+  flex-grow: 1;
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
-  flex: 1 1 30%;
+  padding: 6px;
+  display: flex;
+  width: 30%;
 }
