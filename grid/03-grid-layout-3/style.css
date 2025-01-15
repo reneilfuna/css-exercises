@@ -5,6 +5,11 @@
 
 .container {
   text-align: center;
+
+  display: grid;
+  grid-template-columns: 1fr, 4fr;
+  grid-template-rows: 2fr, 1fr, 5fr, 1fr;
+  gap: 4px;
 }
 
 .container div {
@@ -17,6 +22,8 @@
 
 .header {
   background-color: #393f4d;
+  grid-column: 1 / 3;
+  grid-row: 1;
 }
 
 .menu ul,
@@ -26,6 +33,8 @@
 
 .sidebar {
   background-color: #C50208;
+  grid-column: 1;
+  grid-row: 2 / 4;
 }
 
 .sidebar .photo {
@@ -83,6 +92,8 @@
 
 .footer {
   background-color: #393f4d;
+  grid-column: 1 / 3;
+  grid-row: 4;
 }
 
 .footer p {
