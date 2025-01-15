@@ -24,6 +24,18 @@
   background-color: #393f4d;
   grid-column: 1 / 3;
   grid-row: 1;
+
+  display: grid;
+}
+
+.logo {
+  grid-column: 1;
+  align-self: center;
+  justify-self: baseline;
+}
+
+.menu {
+  grid-column: 2 / 5;
 }
 
 .menu ul,
