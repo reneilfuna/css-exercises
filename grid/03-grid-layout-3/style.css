@@ -91,6 +91,12 @@
   text-transform: uppercase;
 }
 
+.nav ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .article {
   background-color: #bccbde;
   grid-row: 3 / 4;
